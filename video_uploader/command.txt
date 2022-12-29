@@ -1,0 +1,10 @@
+python upload_video.py --file="testVideo.mp4" \
+                       --title="#Shorts #shorts Test Short" \
+                       --description="#Shorts #shorts Just a test" \
+                       --keywords="test" \
+                       --category="22" \
+                       --privacyStatus="private"
+
+
+
+#INFO: https://developers.google.com/youtube/v3/guides/uploading_a_video
