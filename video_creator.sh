@@ -21,16 +21,12 @@ cd ..
 mv combiner/result.mp4 video_uploader/video.mp4
 cd video_uploader
 python upload_video.py --file="video.mp4" \
-                       --title="#Shorts Randomically generated patterns!" \
-                       --description="#Shorts #shortsclip #shortscraft #youtube #youtuber #subscribe #shortsadoptme \
-                       #shortsroblox #shortsanity #shortsbeta #shortsfunny #shortsasmr #shortsart #shortscooking \
-                       #shortscrochet #shortsbyamritamam #shortschallenge #shortscomplitition #shortsblackpink \
-                      #instagramyoutube #youtuberlikes #youtubevide #shortscomedy #shortstiktok #shortsfortnite \
-                      #shortsbts #shortsbhaiveersinghji #shortsbgmi #shortsassam #shortsads #youtubegrowth \
-                      #youtubeusers #instavideo" \
-                       --keywords="shapes random fun music" \
+                       --title="title goes here" \
+                       --description="description goes here" \
+                       --keywords="yup, keywords go here" \
                        --category="22" \
-                       --privacyStatus="public"
+                       --privacyStatus="private"
+                       #change privacy status tu public to make videos public
 cd ../combiner
 rm music.mp3
 rm video.avi

@@ -3,16 +3,16 @@ from moviepy.editor import *
 
 def combine_music_and_video():
 
-    # Carica il video
+    # Load the video
     video = VideoFileClip("video.avi")
 
-    # Carica l'audio
+    # Load the audio
     audio = AudioFileClip("music.mp3")
 
-    # Unisci il video e l'audio
+    # Merge audio and video
     result = video.set_audio(audio)
 
-    # Salva il risultato in un nuovo file
+    # Save the result in a new file
     result.write_videofile("result.mp4")
 
 
