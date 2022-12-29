@@ -5,19 +5,19 @@ from pydub import AudioSegment
 
 
 def take_music(x=10):
-    # Apri il file della canzone
+    # Open the song file
     song = AudioSegment.from_file('music.mp3')
 
-    # Calcola la durata della canzone in secondi
+    # Calculate the length of the song in seconds
     song_duration = len(song) / 1000
 
-    # Genera un numero intero casuale compreso tra 0 e la durata della canzone in secondi
+    # Generate a random number between 0 and the song length
     start_index = random.randint(0, int(song_duration))
 
-    # Prendi una porzione di x secondi a partire dall'indice di inizio casuale
+    # Take a portion of x seconds starting from the start_index
     song_slice = song[start_index * 1000:start_index * 1000 + x * 1000]
 
-    # Salva la porzione di canzone in un nuovo file
+    # Save the portion of the song in a new file
     song_slice.export('../combiner/music.mp3', format='mp3')
 
 
